@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: oms
+  datasource:
+    url: jdbc:postgresql://localhost:5432/oms
+    username: oms
+    password: oms
+  liquibase:
+    enabled: false
+    
