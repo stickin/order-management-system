@@ -1,0 +1,168 @@
+databaseChangeLog:
+- changeSet:
+    id: 1795190160240-1
+    author: stickin (generated)
+    changes:
+    - createTable:
+        columns:
+        - column:
+            constraints:
+              nullable: false
+              primaryKey: true
+              primaryKeyName: event_publicationPK
+            name: id
+            type: UUID
+        - column:
+            constraints:
+              nullable: false
+            name: completion_attempts
+            type: INTEGER
+        - column:
+            name: completion_date
+            type: TIMESTAMP(6) WITH TIME ZONE
+        - column:
+            constraints:
+              nullable: false
+            name: event_type
+            type: VARCHAR(255)
+        - column:
+            name: last_resubmission_date
+            type: TIMESTAMP(6) WITH TIME ZONE
+        - column:
+            constraints:
+              nullable: false
+            name: listener_id
+            type: VARCHAR(255)
+        - column:
+            constraints:
+              nullable: false
+            name: publication_date
+            type: TIMESTAMP(6) WITH TIME ZONE
+        - column:
+            constraints:
+              nullable: false
+            name: serialized_event
+            type: VARCHAR(255)
+        - column:
+            name: status
+            type: VARCHAR(255)
+        tableName: event_publication
+- changeSet:
+    id: 1795190160240-2
+    author: stickin (generated)
+    changes:
+    - createTable:
+        columns:
+        - column:
+            constraints:
+              nullable: false
+              primaryKey: true
+              primaryKeyName: event_publication_archivePK
+            name: id
+            type: UUID
+        - column:
+            constraints:
+              nullable: false
+            name: completion_attempts
+            type: INTEGER
+        - column:
+            name: completion_date
+            type: TIMESTAMP(6) WITH TIME ZONE
+        - column:
+            constraints:
+              nullable: false
+            name: event_type
+            type: VARCHAR(255)
+        - column:
+            name: last_resubmission_date
+            type: TIMESTAMP(6) WITH TIME ZONE
+        - column:
+            constraints:
+              nullable: false
+            name: listener_id
+            type: VARCHAR(255)
+        - column:
+            constraints:
+              nullable: false
+            name: publication_date
+            type: TIMESTAMP(6) WITH TIME ZONE
+        - column:
+            constraints:
+              nullable: false
+            name: serialized_event
+            type: VARCHAR(255)
+        - column:
+            name: status
+            type: VARCHAR(255)
+        tableName: event_publication_archive
+- changeSet:
+    id: 1795190160240-3
+    author: stickin (generated)
+    changes:
+    - createTable:
+        columns:
+        - column:
+            constraints:
+              nullable: false
+              primaryKey: true
+              primaryKeyName: oms_customerPK
+            name: id
+            type: UUID
+        tableName: oms_customer
+- changeSet:
+    id: 1795190160240-4
+    author: stickin (generated)
+    changes:
+    - createTable:
+        columns:
+        - column:
+            constraints:
+              nullable: false
+              primaryKey: true
+              primaryKeyName: oms_orderPK
+            name: id
+            type: UUID
+        tableName: oms_order
+- changeSet:
+    id: 1795190160240-5
+    author: stickin (generated)
+    changes:
+    - createTable:
+        columns:
+        - column:
+            constraints:
+              nullable: false
+              primaryKey: true
+              primaryKeyName: oms_paymentPK
+            name: id
+            type: UUID
+        tableName: oms_payment
+- changeSet:
+    id: 1795190160240-6
+    author: stickin (generated)
+    changes:
+    - createTable:
+        columns:
+        - column:
+            constraints:
+              nullable: false
+              primaryKey: true
+              primaryKeyName: oms_productPK
+            name: id
+            type: UUID
+        tableName: oms_product
+- changeSet:
+    id: 1795190160240-7
+    author: stickin (generated)
+    changes:
+    - createTable:
+        columns:
+        - column:
+            constraints:
+              nullable: false
+              primaryKey: true
+              primaryKeyName: oms_stock_itemPK
+            name: id
+            type: UUID
+        tableName: oms_stock_item
+
