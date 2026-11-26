@@ -16,4 +16,12 @@ public class Customer {
     @Id
     @UuidGenerator(style = UuidGenerator.Style.VERSION_7)
     private UUID id;
+
+    private String firstName;
+
+    private String lastName;
+
+    @Column(unique = true)
+    private String email;
+
 }
