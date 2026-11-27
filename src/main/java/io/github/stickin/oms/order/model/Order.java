@@ -14,7 +14,7 @@ import java.util.UUID;
 @Table(name = "oms_order", indexes = @Index(name = "idx_oms_order_customer_id", columnList = "customerId"))
 @Getter
 @Setter
-@NoArgsConstructor(access = AccessLevel.PROTECTED)
+@NoArgsConstructor
 public class Order {
 
     @Id

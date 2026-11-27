@@ -11,7 +11,7 @@ import java.util.UUID;
 @Table(name = "oms_product")
 @Getter
 @Setter
-@NoArgsConstructor(access = AccessLevel.PROTECTED)
+@NoArgsConstructor
 public class Product {
 
     @Id

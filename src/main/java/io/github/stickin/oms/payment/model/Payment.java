@@ -12,7 +12,7 @@ import java.util.UUID;
 @Table(name = "oms_payment", indexes = @Index(name = "idx_oms_payment_order_id", columnList = "orderId"))
 @Getter
 @Setter
-@NoArgsConstructor(access = AccessLevel.PROTECTED)
+@NoArgsConstructor
 public class Payment {
 
     @Id

@@ -12,4 +12,5 @@ spring:
         format_sql: true
   liquibase:
     enabled: true
-    
+springdoc:
+  writer-with-order-by-keys: true

@@ -10,7 +10,7 @@ import java.util.UUID;
 @Table(name = "oms_customer")
 @Getter
 @Setter
-@NoArgsConstructor(access = AccessLevel.PROTECTED)
+@NoArgsConstructor
 public class Customer {
 
     @Id
